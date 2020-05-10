@@ -1,6 +1,6 @@
 public class EmployeeWage {
-	public static void main(String[] args) {
-   	int isFullTime = 0;
+	void empSalary() {
+		int isFullTime = 0;
 		int isPartTime = 2;
 		int empRatePrHr = 20;
 		int empHr = 0;
@@ -20,7 +20,12 @@ public class EmployeeWage {
 				System.out.println("Part time Employee");
 				perDaySalary = empRatePrHr * empHr;
 				System.out.println("Employee per day salary = "+perDaySalary);
+		}//switch
+	}
+	public static void main(String[] args) {
 
-		}//switchs
+		EmployeeWage empWage = new EmployeeWage();
+		empWage.empSalary();
+
 	}//main()
 }//class
