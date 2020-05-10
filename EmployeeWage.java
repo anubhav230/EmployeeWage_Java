@@ -5,27 +5,34 @@ public class EmployeeWage {
 		int empRatePrHr = 20;
 		int empHr = 0;
 		int perDaySalary = 0;
-		double empCheck = Math.floor(Math.random() * 10) % 2;
-		System.out.println(empCheck);
-		switch ((int)empCheck)
+		int mothWorkingDay = 20;
+		int monthlySalary = 0;
+		for (int i = 1;i <= mothWorkingDay;i++)
 		{
-			case 0 :
-				empHr = 8;
-				System.out.println("Full time Employee");
-				perDaySalary = empRatePrHr * empHr;
-				System.out.println("Employee per day salary = "+perDaySalary);
-				return;
-			case 1 :
-				empHr = 4;
-				System.out.println("Part time Employee");
-				perDaySalary = empRatePrHr * empHr;
-				System.out.println("Employee per day salary = "+perDaySalary);
-		}//switch
+			double empCheck = Math.floor(Math.random() * 10) % 2;
+			switch ((int)empCheck)
+			{
+				case 0 :
+					empHr = 8;
+					break;
+
+				case 1 :
+					empHr = 4;
+					break;
+
+			}//switch
+			perDaySalary = empRatePrHr * empHr;
+
+			monthlySalary = perDaySalary + monthlySalary;
+
+		}
+		System.out.println("Monthly salary: "+monthlySalary);
+
 	}
 	public static void main(String[] args) {
-
 		EmployeeWage empWage = new EmployeeWage();
 		empWage.empSalary();
 
 	}//main()
 }//class
+
