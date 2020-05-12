@@ -15,7 +15,7 @@ public class EmployeeWage {
 				case 1 :
 					empHr = 8;
 					break;
-				case 2 :
+				case 0 :
 					empHr = 4;
 					break;
 
