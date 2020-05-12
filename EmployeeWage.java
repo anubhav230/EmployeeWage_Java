@@ -1,7 +1,7 @@
 public class EmployeeWage {
 	void empSalary() {
 		int isFullTime = 0;
-		int isPartTime = 2;
+		int isPartTime = 1;
 		int empRatePrHr = 20;
 		int empHr = 0;
 		int perDaySalary = 0;
